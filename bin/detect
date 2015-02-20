@@ -17,11 +17,6 @@
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 # -----------------------------------------------------------------------------
 
-if [ -z "$SSH_KEY" ]; then
-    echo 'no';
-    exit 1;
-else    
-    echo 'SSH';
-    exit 0;
-fi
+# Need to skip detect since env_var is not passed in to detect
 
+exit 0;

@@ -20,7 +20,7 @@
 mkdir -p ~/.ssh/
 chmod 700 ~/.ssh/
 
-echo "$SSH_KEY" > ~/.ssh/id_rsa
+cp $3/SSH_KEY  > ~/.ssh/id_rsa
 chmod 400 ~/.ssh/id_rsa
 
 echo 'StrictHostKeyChecking=no' > ~/.ssh/config
